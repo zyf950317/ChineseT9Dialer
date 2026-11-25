@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:label="中文 T9 拨号器扩展"
+        android:theme="@android:style/Theme.Material.Light">
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposeddescription" android:value="为 AOSP/Google Dialer 增加中文拼音 T9 联系人搜索" />
+        <meta-data android:name="xposedminversion" android:value="82" />
+    </application>
+</manifest>
