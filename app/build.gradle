@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'dev.chatgpt.chineset9dialer'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'dev.chatgpt.chineset9dialer'
+        minSdk 29
+        targetSdk 28
+        versionCode 1
+        versionName '0.1.0'
+    }
+}
+
+dependencies {
+    compileOnly 'de.robv.android.xposed:api:82'
+}
