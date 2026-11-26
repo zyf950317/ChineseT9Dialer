@@ -55,6 +55,8 @@ public final class ChineseT9Hook implements IXposedHookLoadPackage {
                                 ? "null" : result.getClass().getName();
                         diag("METHOD CALLED: name=[" + name + "], resultType=" +
                                 resultType + ", originalResult=" + String.valueOf(result));
+                        XposedBridge.log(Log.getStackTraceString(new Throwable(
+                                "ChineseT9 generateNamePrefixes caller")));
 
                         if (!(param.args[0] instanceof Context)) {
                             diag("SKIP: first argument is not Context; actual=" +
